@@ -1,0 +1,107 @@
+
+/*CSS for the entire body*/
+body{
+    background-color: rgba(0, 0, 0, 0.973);
+}
+
+/*CSS for h1*/
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/*CSS for first line of flashcards*/
+.flashcard-first-line{
+    text-align: center;
+}
+
+/*CSS for second line of flashcards*/
+.flashcard-second-line{
+    text-align: center;
+}
+
+/*CSS for third line of flashcards*/
+.flashcard-third-line{
+    text-align: center;
+}
+
+/*CSS for fourth line of flashcards*/
+.flashcard-fourth-line{
+    text-align: center;
+}
+
+/*CSS for fifth line of flashcards*/
+.flashcard-fifth-line{
+    text-align: center;
+}
+
+/*CSS for sixth line of flashcards*/
+.flashcard-sixth-line{
+    text-align: center;
+}
+
+/*CSS for seventh line of flashcards*/
+.flashcard-seventh-line{
+    text-align: center;
+}
+
+/*CSS for eighth line of flashcards*/
+.flashcard-eighth-line{
+    text-align: center;
+}
+
+/*CSS for nineth line of flashcards*/
+.flashcard-nineth-line{
+    text-align: center;
+}
+
+/*CSS for tenth line of flashcards*/
+.flashcard-tenth-line{
+    text-align: center;
+}
+
+/* CSS for flashcards */
+.flashcard{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(165, 16, 16);
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(57, 153, 212);
+}
+/* CSS for Hiragana characters */
+.hiragana{
+    font-size: 3em;
+    font-family: sans-serif;
+    color: white;
+}
+/* CSS for input box */
+input[type="text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(219, 36, 36);
+    border-radius: 4px;
+    text-align: center;
+    font-family: sans-serif;
+}
+input[type="text"]:hover{
+    background-color: lightgray;
+}
+
+input[type="text"]:focus{
+    border: 2px solid #555;
+}
+/* CSS for error message */
+.error{
+    color: red;
+}
+
+/*#a input:invalid{
+    background-color: green;
+}*/
