@@ -1,0 +1,50 @@
+/* CSS for all h1 */
+p{
+    color: rgb(57, 153, 212);
+    font-family: sans-serif;
+    text-align: center;
+    font-size: xx-large;
+}
+
+/*CSS for the entire body*/
+body{
+    background-color: rgba(0, 0, 0, 0.973);
+}
+
+button{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 12px 35px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 8px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    height: 95vh;
+    width: 95vw;
+}
+
+.title{
+    position: absolute;
+    border: 1px solid green;
+    font-family: sans-serif;
+    color: white;
+}
+
+.hiragana-link{
+    text-align: center;
+    font-weight: bold;
+}
+
+.katakana-link{
+    text-align: center;
+    font-weight: bold;
+}
