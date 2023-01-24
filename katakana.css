@@ -1,7 +1,7 @@
 
 /*CSS for the entire body*/
 body{
-    background-color: rgba(0, 0, 0, 0.973);
+    background-color: #282828;
 }
 
 /*CSS for h1*/
@@ -61,6 +61,18 @@ h1{
     text-align: center;
 }
 
+.flashcard-a{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(165, 16, 16);
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(57, 153, 212);
+}
+
 /* CSS for flashcards */
 .flashcard{
     display: inline-block;
@@ -68,17 +80,47 @@ h1{
     height: 200px;
     padding: 10px;
     margin: 10px;
-    border: 1px solid rgb(165, 16, 16);
+    border: 2px solid rgb(165, 16, 16);
     border-radius: 5px;
     text-align: center;
     background-color: rgb(57, 153, 212);
 }
-/* CSS for Katakana characters */
+
+
+/* CSS for katakana characters */
 .katakana{
     font-size: 3em;
     font-family: sans-serif;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+/*CSS to make animation "shake" on correct input in each flashcard*/
+.shake{
+    animation: horizontal-shaking 0.35s;
+}
+@keyframes horizontal-shaking{
+    0%{transform: translateX(0)}
+    25%{transform: translateX(5px)}
+    50%{transform: translateX(-5px)}
+    75%{transform: translateX(5px)}
+    100%{transform: translateX(0)}
+}
+   
+
+
+
+
+
+
+
 /* CSS for input box */
 input[type="text"]{
     width: 100%;
@@ -97,11 +139,29 @@ input[type="text"]:hover{
 input[type="text"]:focus{
     border: 2px solid #555;
 }
-/* CSS for error message */
-.error{
-    color: red;
+
+
+button{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 25px 100px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
 }
 
-/*#a input:invalid{
-    background-color: green;
-}*/
+.submit-button{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#output{
+    font-family: sans-serif;
+    color: lightblue;
+}

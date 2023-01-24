@@ -5,7 +5,6 @@
     <meta name="author" content="Bernardo Teixeira">
     <meta name="keywords" content="HTML,CSS,Japanese,traning">
     <meta name="description" content="Projeto HTML/CSS - JP practice">
-    <meta http-equiv="refresh" content="10">
     <link rel="stylesheet" type="text/css" href="katakana.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
     <title>Katakana</title>
@@ -16,42 +15,42 @@
 
     <!-- ア,イ,ウ,エ,オ -->
     <div class="flashcard-first-line">
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-a">
             <p class="katakana">ア</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" required pattern="a" id="a" name="a" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput1(event)" id="a" name="a" required>
             </form>
             <p class="error" id="a-error"></p>
         </div>
-    
-        <div class="flashcard">
+
+        <div class="flashcard" id="flashcard-i">
             <p class="katakana">イ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="i" name="i" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput2(event)" id="i" name="i" required>
             </form>
             <p class="error" id="i-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-u">
             <p class="katakana">ウ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="u" name="u" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput3(event)" id="u" name="u" required>
             </form>
             <p class="error" id="u-error"></p>
         </div>
 
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-e">
             <p class="katakana">エ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="e" name="e" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput4(event)" id="e" name="e" required>
             </form>
             <p class="error" id="e-error"></p>
         </div>
 
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-o">
             <p class="katakana">オ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="o" name="o" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput5(event)" id="o" name="o" required>
             </form>
             <p class="error" id="o-error"></p>
         </div>
@@ -63,42 +62,42 @@
 
     <!-- カ,キ,ク,ケ,コ -->
     <div class="flashcard-second-line">
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ka">
             <p class="katakana">カ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" required pattern="ka" id="ka" name="ka" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput6(event)" id="ka" name="ka" required>
             </form>
             <p class="error" id="ka-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ki">
             <p class="katakana">キ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="ki" name="ki" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput7(event)" id="ki" name="ki" required>
             </form>
             <p class="error" id="ki-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ku">
             <p class="katakana">ク</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="ku" name="ku" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput8(event)" id="ku" name="ku" required>
             </form>
             <p class="error" id="ku-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-ke">
             <p class="katakana">ケ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="ke" name="ke" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput9(event)" id="ke" name="ke" required>
             </form>
             <p class="error" id="ke-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-ko">
             <p class="katakana">コ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="ko" name="ko" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput10(event)" id="ko" name="ko" required>
             </form>
             <p class="error" id="ko-error"></p>
         </div>
@@ -110,42 +109,42 @@
 
     <!-- サ,シ,ス,セ,ソ -->
     <div class="flashcard-third-line">
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-sa">
             <p class="katakana">サ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" required pattern="sa" id="sa" name="sa" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput11(event)" id="sa" name="sa" required>
             </form>
             <p class="error" id="sa-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-shi">
             <p class="katakana">シ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="shi" name="shi" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput12(event)" id="shi" name="shi" required>
             </form>
             <p class="error" id="shi-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-su">
             <p class="katakana">ス</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="su" name="su" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput13(event)" id="su" name="su" required>
             </form>
             <p class="error" id="su-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-se">
             <p class="katakana">セ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="se" name="se" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput14(event)" id="se" name="se" required>
             </form>
             <p class="error" id="se-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-so">
             <p class="katakana">ソ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="so" name="so" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput15(event)" id="so" name="so" required>
             </form>
             <p class="error" id="so-error"></p>
         </div>
@@ -157,42 +156,42 @@
 
     <!-- タ,チ,ツ,テ,ト -->
     <div class="flashcard-fourth-line">
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ta">
             <p class="katakana">タ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" required pattern="ta" id="ta" name="ta" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput16(event)" id="ta" name="ta" required>
             </form>
             <p class="error" id="ta-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-chi">
             <p class="katakana">チ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="chi" name="chi" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput17(event)" id="chi" name="chi" required>
             </form>
             <p class="error" id="chi-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-tsu">
             <p class="katakana">ツ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="tsu" name="tsu" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput18(event)" id="tsu" name="tsu" required>
             </form>
             <p class="error" id="tsu-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-te">
             <p class="katakana">テ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="te" name="te" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput19(event)" id="te" name="te" required>
             </form>
             <p class="error" id="te-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-to">
             <p class="katakana">ト</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="to" name="to" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput20(event)" id="to" name="to" required>
             </form>
             <p class="error" id="to-error"></p>
         </div>
@@ -204,42 +203,42 @@
 
     <!-- ナ,ニ,ヌ,ネ,ノ -->
     <div class="flashcard-fifth-line">
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-na">
             <p class="katakana">ナ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" required pattern="na" id="na" name="na" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput21(event)" id="na" name="na" required>
             </form>
             <p class="error" id="na-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ni">
             <p class="katakana">ニ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="ni" name="ni" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput22(event)" id="ni" name="ni" required>
             </form>
             <p class="error" id="ni-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-nu">
             <p class="katakana">ヌ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="nu" name="nu" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput23(event)" id="nu" name="nu" required>
             </form>
             <p class="error" id="nu-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-ne">
             <p class="katakana">ネ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="ne" name="ne" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput24(event)" id="ne" name="ne" required>
             </form>
             <p class="error" id="ne-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-no">
             <p class="katakana">ノ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="no" name="no" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput25(event)" id="no" name="no" required>
             </form>
             <p class="error" id="no-error"></p>
         </div>
@@ -251,42 +250,42 @@
 
     <!-- ハ,ヒ,フ,ヘ,ホ -->
     <div class="flashcard-sixth-line">
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ha">
             <p class="katakana">ハ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" required pattern="ha" id="ha" name="ha" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput26(event)" id="ha" name="ha" required>
             </form>
             <p class="error" id="ha-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-hi">
             <p class="katakana">ヒ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="hi" name="hi" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput27(event)" id="hi" name="hi" required>
             </form>
             <p class="error" id="hi-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-hu">
             <p class="katakana">フ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="hu" name="hu" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput28(event)" id="hu" name="hu" required>
             </form>
             <p class="error" id="hu-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-he">
             <p class="katakana">ヘ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="he" name="he" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput29(event)" id="he" name="he" required>
             </form>
             <p class="error" id="he-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-ho">
             <p class="katakana">ホ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="ho" name="ho" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput30(event)" id="ho" name="ho" required>
             </form>
             <p class="error" id="ho-error"></p>
         </div>
@@ -298,42 +297,42 @@
 
     <!-- マ,ミ,ム,メ,モ -->
     <div class="flashcard-seventh-line">
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ma">
             <p class="katakana">マ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" required pattern="ma" id="ma" name="ma" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput31(event)" id="ma" name="ma" required>
             </form>
             <p class="error" id="ma-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-mi">
             <p class="katakana">ミ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="mi" name="mi" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput32(event)" id="mi" name="mi" required>
             </form>
             <p class="error" id="mi-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-mu">
             <p class="katakana">ム</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="mu" name="mu" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput33(event)" id="mu" name="mu" required>
             </form>
             <p class="error" id="mu-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-me">
             <p class="katakana">メ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="me" name="me" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput34(event)" id="me" name="me" required>
             </form>
             <p class="error" id="me-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-mo">
             <p class="katakana">モ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="mo" name="mo" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput35(event)" id="mo" name="mo" required>
             </form>
             <p class="error" id="mo-error"></p>
         </div>
@@ -345,42 +344,42 @@
 
     <!-- ラ,リ,ル,レ,ロ -->
     <div class="flashcard-eighth-line">
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ra">
             <p class="katakana">ラ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" required pattern="ra" id="ra" name="ra" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput36(event)" id="ra" name="ra" required>
             </form>
             <p class="error" id="ra-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ri">
             <p class="katakana">リ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="ri" name="ri" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput37(event)" id="ri" name="ri" required>
             </form>
             <p class="error" id="ri-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ru">
             <p class="katakana">ル</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="ru" name="ru" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput38(event)" id="ru" name="ru" required>
             </form>
             <p class="error" id="ru-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-re">
             <p class="katakana">レ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="re" name="re" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput39(event)" id="re" name="re" required>
             </form>
             <p class="error" id="re-error"></p>
         </div>
-
-        <div class="flashcard">
+    
+        <div class="flashcard" id="flashcard-ro">
             <p class="katakana">ロ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="ro" name="ro" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput40(event)" id="ro" name="ro" required>
             </form>
             <p class="error" id="ro-error"></p>
         </div>
@@ -392,26 +391,26 @@
 
     <!-- ヤ,ユ,ヨ -->
     <div class="flashcard-nineth-line">
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-ya">
             <p class="katakana">ヤ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" required pattern="ya" id="ya" name="ya" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput41(event)" id="ya" name="ya" required>
             </form>
             <p class="error" id="ya-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-yu">
             <p class="katakana">ユ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="yu" name="yu" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput42(event)" id="yu" name="yu" required>
             </form>
             <p class="error" id="yu-error"></p>
         </div>
     
-        <div class="flashcard">
-            <p class="katakana">ル</p>
+        <div class="flashcard" id="flashcard-yo">
+            <p class="katakana">ヨ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="yo" name="yo" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput43(event)" id="yo" name="yo" required>
             </form>
             <p class="error" id="yo-error"></p>
         </div>
@@ -421,20 +420,28 @@
 
 
 
-    <!-- ワ,ン -->
+    <!-- ワ,ヲ,ン -->
     <div class="flashcard-tenth-line">
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-wa">
             <p class="katakana">ワ</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" required pattern="wa" id="wa" name="wa" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput44(event)" id="wa" name="wa" required>
             </form>
             <p class="error" id="wa-error"></p>
         </div>
     
-        <div class="flashcard">
+        <div class="flashcard" id="flashcard-wo">
+            <p class="katakana">ヲ</p>
+            <form name="input-form">
+                <input type="text" autocomplete="off" onkeydown="validateInput45(event)" id="wo" name="wo" required>
+            </form>
+            <p class="error" id="wo-error"></p>
+        </div>
+
+        <div class="flashcard" id="flashcard-n">
             <p class="katakana">ン</p>
             <form name="input-form">
-                <input type="text" autocomplete="off" id="n" name="n" required>
+                <input type="text" autocomplete="off" onkeydown="validateInput46(event)" id="n" name="n" required>
             </form>
             <p class="error" id="n-error"></p>
         </div>
@@ -445,9 +452,10 @@
 
 
     <div class="submit-button">
-        
+        <button class="submit-katakana" id="submit_score_katakana" onclick="showScore()">Submit</button>
+        <p id="output"></p>
     </div>
+    <script src="/katakana.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
-    <!-- Add 2 more flashcards with different Hiragana characters -->
 </body>
 </html>

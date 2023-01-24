@@ -1,7 +1,7 @@
 
 /*CSS for the entire body*/
 body{
-    background-color: rgba(0, 0, 0, 0.973);
+    background-color: #181818;
 }
 
 /*CSS for h1*/
@@ -61,6 +61,18 @@ h1{
     text-align: center;
 }
 
+.flashcard-a{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(165, 16, 16);
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(57, 153, 212);
+}
+
 /* CSS for flashcards */
 .flashcard{
     display: inline-block;
@@ -73,12 +85,42 @@ h1{
     text-align: center;
     background-color: rgb(57, 153, 212);
 }
+
+
 /* CSS for Hiragana characters */
 .hiragana{
     font-size: 3em;
     font-family: sans-serif;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+/*CSS to make animation "shake" on correct input in each flashcard*/
+.shake{
+    animation: horizontal-shaking 0.35s;
+}
+@keyframes horizontal-shaking{
+    0%{transform: translateX(0)}
+    25%{transform: translateX(5px)}
+    50%{transform: translateX(-5px)}
+    75%{transform: translateX(5px)}
+    100%{transform: translateX(0)}
+}
+   
+
+
+
+
+
+
+
 /* CSS for input box */
 input[type="text"]{
     width: 100%;
@@ -111,6 +153,7 @@ button{
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
+    font-size: large;
 }
 
 .submit-button{
@@ -118,11 +161,7 @@ button{
     margin-top: 20px;
 }
 
-.correct{
-    background-color: lightgreen;
-    transition: background .5s ease;
+#output{
+    font-family: sans-serif;
+    color: lightblue;
 }
-
-/*#a input:invalid{
-    background-color: green;
-}*/
