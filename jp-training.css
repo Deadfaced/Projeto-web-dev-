@@ -6,9 +6,31 @@ p{
     font-size: xx-large;
 }
 
-/*CSS for the entire body*/
+/*entire body*/
 body{
-    background-color: #282828;
+    background-image: url("/assets//Home\ page\ bg.jpg");
+}
+header{
+    display: table;
+    width: 100%;
+}
+
+.home-title{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 250px;
+    font-size:500%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+.github{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    right: 50px;
 }
 
 button{
@@ -23,28 +45,42 @@ button{
     border-radius: 8px;
 }
 
+
 .box{
     display: flex;
     justify-content: space-around;
     position: relative;
     align-items: center;
-    height: 95vh;
+    height: 45vh;
     width: 95vw;
 }
 
-.title{
-    position: absolute;
-    border: 1px solid green;
-    font-family: sans-serif;
-    color: white;
+.study-room{
+    text-align: center;
+    font-weight: bold;
 }
-
 .hiragana-link{
     text-align: center;
     font-weight: bold;
 }
-
 .katakana-link{
     text-align: center;
     font-weight: bold;
+}
+
+
+.hiragana-jp{
+    font-weight: normal;
+    color: white;
+    font-size: x-large;
+}
+.katakana-jp{
+    font-weight: normal;
+    color: white;
+    font-size: x-large;
+}
+.study-room-jp{
+    font-weight: normal;
+    color: white;
+    font-size: x-large;
 }

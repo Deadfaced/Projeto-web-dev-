@@ -1,79 +1,102 @@
 
-/*CSS for the entire body*/
+/*entire body*/
 body{
-    background-color: #282828;
+    /*background-color: #282828;*/
+    background-image: url("/assets/Katakana-bg-img0000.jpg");
 }
 
-/*CSS for h1*/
-h1{
+/*header*/
+.header{
+    display: table;
+    width: 100%;
+}
+
+.github{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    left: 50px;
+}
+
+/*h1*/
+.katakana-title{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    height: 150px;
+    font-size:500%;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
+    position: relative;
+    right: 100px;
 }
 
-/*CSS for first line of flashcards*/
+/*back button*/
+.home-page-link{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: cornflowerblue;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    left: 50px;
+}
+.home-page-link:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/*                  flashcard lines                     */
+/*first line of flashcards*/
 .flashcard-first-line{
     text-align: center;
 }
-
-/*CSS for second line of flashcards*/
+/*second line of flashcards*/
 .flashcard-second-line{
     text-align: center;
 }
-
-/*CSS for third line of flashcards*/
+/*third line of flashcards*/
 .flashcard-third-line{
     text-align: center;
 }
-
-/*CSS for fourth line of flashcards*/
+/*fourth line of flashcards*/
 .flashcard-fourth-line{
     text-align: center;
 }
-
-/*CSS for fifth line of flashcards*/
+/*fifth line of flashcards*/
 .flashcard-fifth-line{
     text-align: center;
 }
-
-/*CSS for sixth line of flashcards*/
+/*sixth line of flashcards*/
 .flashcard-sixth-line{
     text-align: center;
 }
-
-/*CSS for seventh line of flashcards*/
+/*seventh line of flashcards*/
 .flashcard-seventh-line{
     text-align: center;
 }
-
-/*CSS for eighth line of flashcards*/
+/*eighth line of flashcards*/
 .flashcard-eighth-line{
     text-align: center;
 }
-
-/*CSS for nineth line of flashcards*/
+/*nineth line of flashcards*/
 .flashcard-nineth-line{
     text-align: center;
 }
-
-/*CSS for tenth line of flashcards*/
+/*tenth line of flashcards*/
 .flashcard-tenth-line{
     text-align: center;
 }
 
-.flashcard-a{
-    display: inline-block;
-    width: 150px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid rgb(165, 16, 16);
-    border-radius: 5px;
-    text-align: center;
-    background-color: rgb(57, 153, 212);
-}
 
-/* CSS for flashcards */
+/*flashcards*/
 .flashcard{
     display: inline-block;
     width: 150px;
@@ -87,11 +110,12 @@ h1{
 }
 
 
-/* CSS for katakana characters */
+/*katakana characters*/
 .katakana{
     font-size: 3em;
     font-family: sans-serif;
     color: white;
+    font-weight: bold;
 }
 
 
@@ -102,7 +126,7 @@ h1{
 
 
 
-/*CSS to make animation "shake" on correct input in each flashcard*/
+/*make animation "shake" on correct input in each flashcard*/
 .shake{
     animation: horizontal-shaking 0.35s;
 }
@@ -121,7 +145,7 @@ h1{
 
 
 
-/* CSS for input box */
+/*input box*/
 input[type="text"]{
     width: 100%;
     padding: 12px 20px;
@@ -141,6 +165,10 @@ input[type="text"]:focus{
 }
 
 
+
+
+
+/*submit button*/
 button{
     background-color: green;
     color: white;
@@ -155,12 +183,13 @@ button{
     font-weight: bold;
     font-size: large;
 }
-
 .submit-button{
     text-align: center;
     margin-top: 20px;
 }
 
+
+/*output*/
 #output{
     font-family: sans-serif;
     color: lightblue;
