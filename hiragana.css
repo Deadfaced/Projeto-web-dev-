@@ -173,20 +173,19 @@ button{
     background-color: green;
     color: white;
     font-weight: bold;
-    padding: 25px 100px;
+    width: 280px;
+    height: 75px;
     border: none;
     cursor: pointer;
-    text-align: center;
     font-family: sans-serif;
     border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
-    font-size: large;
+    font-size: x-large;
 }
 .submit-button{
     text-align: center;
     margin-top: 20px;
 }
+
 
 /*output*/
 #output{

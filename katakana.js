@@ -1644,4 +1644,11 @@ function validateInput46(event){
 function showScore(){
     let output = document.getElementById("output");
     output.innerHTML = correctInputs + " / " + totalInputs + " correct answers";
+
+    let resetButton = document.getElementById("reset");
+    resetButton.removeAttribute("hidden");
+    let studyButton = document.getElementById("study");
+    studyButton.removeAttribute("hidden");
+
+    window.scrollTo(0, document.body.scrollHeight);
 }
