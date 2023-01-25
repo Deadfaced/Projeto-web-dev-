@@ -1652,3 +1652,61 @@ function showScore(){
 
     window.scrollTo(0, document.body.scrollHeight);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//teste
+//criar array de objetos em que cada objeto vai ter id_flashcard, input e answer (string)
+function validateInput48(event, id, answer, id_flashcard, id_flashcard_next){
+    var ya_correctInput = false;
+    //validate ENTER key pressed
+    if(event.key === "Enter"){
+        let input_ya = document.getElementById(id);
+        let flashcard_ya = document.getElementById(id_flashcard);
+
+        //validates user input
+        if(input_ya.value === answer){
+            flashcard_ya.style.backgroundColor = "lightgreen";
+
+            //after input focuses on the next input
+            document.getElementById(id_flashcard_next).focus();
+
+            if(ya_correctInput === false){
+                correctInputs++;
+                ya_correctInput = true;
+            }
+        }
+        else{
+            flashcard_ya.style.backgroundColor = "red";
+
+            //adds class "shake" to flashcard class
+            flashcard_ya.classList.add("shake");
+            setTimeout(function(){
+                flashcard_ya.classList.remove("shake");
+              },500);
+
+            //after input focuses on the next input
+            document.getElementById("yu").focus();
+        }
+    }    
+}
