@@ -52,7 +52,7 @@ button{
     position: relative;
     align-items: center;
     height: 45vh;
-    width: 95vw;
+    width: 100%;
 }
 
 .study-room{
@@ -83,4 +83,20 @@ button{
     font-weight: normal;
     color: white;
     font-size: x-large;
+}
+
+
+footer{
+    background-color: #282828;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.author{
+    color: rgb(57, 153, 212);
+    font-size: small;
+    font-family: sans-serif;
+    text-align: center;
 }
