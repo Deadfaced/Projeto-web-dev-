@@ -8,7 +8,7 @@ p{
 
 /*entire body*/
 body{
-    background-image: url("/assets//Home\ page\ bg.jpg");
+    background-image: url("assets//Home\ page\ bg.jpg");
 }
 header{
     display: table;

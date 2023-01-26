@@ -1,6 +1,6 @@
 body{
     /*background-color: #181818;*/
-    background-image: url("/assets//Home\ page\ bg.jpg");
+    background-image: url("assets//Home\ page\ bg.jpg");
 }
 header{
     display: table;
