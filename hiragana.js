@@ -1677,7 +1677,7 @@ function showScore(){
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //teste
 //criar array de objetos em que cada objeto vai ter id_flashcard, input e answer (string)
-function validateInput48(event, id, answer, id_flashcard, id_flashcard_next){
+/*function validateInput48(event, id, answer, id_flashcard, id_flashcard_next){
     var ya_correctInput = false;
     //validate ENTER key pressed
     if(event.key === "Enter"){
@@ -1710,7 +1710,7 @@ function validateInput48(event, id, answer, id_flashcard, id_flashcard_next){
         }
     }    
 }
-
+*/
 
 
 

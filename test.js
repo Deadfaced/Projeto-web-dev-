@@ -11,8 +11,20 @@ class flashcard{
 
 var arrayFC = [
 
-    new flashcard("flashcard-a", 1, "a"),
-    new flashcard("flashcard-i", 2, "u")
+    new flashcard("flashcard-a", "a", "a"),
+    new flashcard("flashcard-i", "u", "u"),
+    new flashcard("flashcard-u", "u", "u"),
+    new flashcard("flashcard-e", "e", "e"),
+    new flashcard("flashcard-o", "o", "o"),
+
+
+    
+    new flashcard("flashcard-a", "a", "a"),
+    new flashcard("flashcard-i", "u", "u"),
+    new flashcard("flashcard-u", "u", "u"),
+    new flashcard("flashcard-e", "e", "e"),
+    new flashcard("flashcard-o", "o", "o"),
+
 
 ];
 
@@ -26,15 +38,19 @@ function validation(flashcard, id, answer){
     let tempFC = document.getElementById(flashcard);
 
     if(tempId === answer[id].value){
-        flashcard.style.backgroundColor = "lightgreen";
+        tempFC.style.backgroundColor = "lightgreen";
+b
+        document.getElementById((id + 1)).focus();
     }
     else{
-        flashcard.style.backgroundColor = "red";
+        tempFC.style.backgroundColor = "red";
 
-            //adds class "shake" to flashcard class
-            flashcard.classList.add("shake");
-            setTimeout(function(){
-                flashcard.classList.remove("shake");
-              },500);
+        //adds class "shake" to flashcard class
+        tempFC.classList.add("shake");
+        setTimeout(function(){
+            tempFC.classList.remove("shake");
+        },500);
+
+        document.getElementById((id + 1)).focus();
     }
 }
