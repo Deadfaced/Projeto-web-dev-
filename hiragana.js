@@ -1710,3 +1710,9 @@ function validateInput48(event, id, answer, id_flashcard, id_flashcard_next){
         }
     }    
 }
+
+
+
+
+
+
