@@ -11,25 +11,31 @@ class flashcard{
 
 var arrayFC = [
 
-    new flashcard("flashcard-a", "a", "a"),
-    new flashcard("flashcard-i", "u", "u"),
-    new flashcard("flashcard-u", "u", "u"),
-    new flashcard("flashcard-e", "e", "e"),
-    new flashcard("flashcard-o", "o", "o"),
+    new flashcard("flashcard-a", id, "a"),
+    new flashcard("flashcard-i", id, "u"),
+    new flashcard("flashcard-u", id, "u"),
+    new flashcard("flashcard-e", id, "e"),
+    new flashcard("flashcard-o", id, "o"),
 
 
     
-    new flashcard("flashcard-a", "a", "a"),
-    new flashcard("flashcard-i", "u", "u"),
-    new flashcard("flashcard-u", "u", "u"),
-    new flashcard("flashcard-e", "e", "e"),
-    new flashcard("flashcard-o", "o", "o"),
+    new flashcard("flashcard-ka", id, "a"),
+    new flashcard("flashcard-ki", id, "u"),
+    new flashcard("flashcard-ku", id, "u"),
+    new flashcard("flashcard-ke", id, "e"),
+    new flashcard("flashcard-ko", id, "o"),
 
 
 ];
 
 
+for(let i = 0; i < arrayFC.length; i++){
+    arrayFC[i].id = "id-" + (i + 1);
+}
 
+
+
+arrayFC.sort( (a,b) => {return 0.5 - Math.random() });
 
 
 
@@ -37,9 +43,8 @@ function validation(flashcard, id, answer){
     let tempId = document.getElementById(id);
     let tempFC = document.getElementById(flashcard);
 
-    if(tempId === answer[id].value){
+    if(tempId.value === answer){
         tempFC.style.backgroundColor = "lightgreen";
-b
         document.getElementById((id + 1)).focus();
     }
     else{
