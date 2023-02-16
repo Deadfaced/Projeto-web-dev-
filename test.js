@@ -29,12 +29,6 @@ var arrayFC = [
 ];
 
 
-for(let i = 0; i < arrayFC.length; i++){
-    arrayFC[i].id = "input " + (i + 1);
-}
-
-
-
 
 arrayFC.sort( (a,b) => {return 0.5 - Math.random() })
 /*
@@ -44,6 +38,12 @@ arrayFC.sort( (a,b) => {return 0.5 - Math.random() })
     se Math.random() retornar 0 a função sort() vai retornar 0.5 (0.5 - 0 = 0.5); se Math.random() retornar 1 a função sort() vai retornar -0.5
     dependendo de a função sort() retornar um número positivo ou negativo, a função vai ou não vai trocar os argumentos a e b 
 */
+
+
+
+for(let i = 0; i < arrayFC.length; i++){
+    arrayFC[i].id = "input " + (i + 1);
+}
 
 
 

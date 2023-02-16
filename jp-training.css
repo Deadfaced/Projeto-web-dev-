@@ -1,84 +1,21 @@
-/* CSS for all h1 */
+/* general CSS*/
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/Home\ page\ bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-content: space-around;
+}
 p{
     color: rgb(57, 153, 212);
     font-family: sans-serif;
     text-align: center;
     font-size: xx-large;
 }
-
-/*entire body*/
-body{
-    background-image: url("assets//Home\ page\ bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-/*header{
-    display: table;
-    width: 100%;
-    border: 1px solid green;
-}
-
-.home-title{
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    height: 250px;
-    width: 80vw;
-    font-size:500%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    position: relative;
-    margin-right: -30px;
-    border: 1px solid blue;
-}
-.github{
-    position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    border: 1px solid red;
-    text-decoration: none;
-}*/
-
-header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.home-title {
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    height: 100px;
-    width: 80vw;
-    font-size: 500%;
-    text-align: center;
-    position: relative;
-    margin-right: -30px;
-}
-
-.github {
-    position: absolute;
-    right: 100px;
-    top: 50%;
-    transform: translateY(-100%);
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-
-
 button{
+    display: flex;
     background-color: green;
     color: white;
     font-weight: bold;
@@ -91,57 +28,73 @@ button{
 }
 
 
+
+
+
+
+
+
+
+
+/* header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.home-title {
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 500%;
+}
+header > a{
+    display: flex;
+    justify-self: flex-end;
+    position: absolute;
+    right: 100px;
+}
+
+
+
+
+
+/* box div */
 .box{
     display: flex;
+    height: calc(85% - (header height + footer height));
+    margin-top: 10%;
+    margin-bottom: 10%;
     justify-content: space-around;
-    position: relative;
+}.study-room-jp, .hiragana-jp, .katakana-jp{
+    color: white;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+}
+.study-room, .hiragana-link, .katakana-link{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 45vh;
-    width: 100%;
-}
-
-.study-room{
-    text-align: center;
-    font-weight: bold;
-}
-.hiragana-link{
-    text-align: center;
-    font-weight: bold;
-}
-.katakana-link{
-    text-align: center;
     font-weight: bold;
 }
 
 
-.hiragana-jp{
-    font-weight: normal;
-    color: white;
-    font-size: x-large;
-}
-.katakana-jp{
-    font-weight: normal;
-    color: white;
-    font-size: x-large;
-}
-.study-room-jp{
-    font-weight: normal;
-    color: white;
-    font-size: x-large;
-}
 
 
+
+
+
+/* footer */
 footer{
-    background-color: #282828;
-    position:absolute;
+    position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
+    justify-content: center;
+    background-color: transparent;
 }
-
-.author{
-    color: rgb(57, 153, 212);
+footer > p{
     font-size: small;
-    font-family: sans-serif;
-    text-align: center;
 }
