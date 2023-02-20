@@ -1,105 +1,66 @@
 body{
-    /*background-color: #181818;*/
+    margin: 0;
+    padding: 0;
     background-image: url("assets//Home\ page\ bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-header{
-    display: table;
-    width: 100%;
-}
 
+
+
+
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 h1{
-    display: table-cell;
+    display: flex;
     color: white;
     font-family: sans-serif;
-    position: relative;
-    height: 20vh;
     font-size: 500%;
-    right: 50px;
-    text-align: center;
     font-weight: bold;
-    vertical-align: middle;
 }
-
-/*back button*/
 .home-page-link{
+    display: flex;
+    margin-right: 15%;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
     font-size: x-large;
     color: cornflowerblue;
-    display: table-cell;
-    vertical-align: middle;
-    position: relative;
-    left: 50px;
-}
-.home-page-link:hover{
+}.home-page-link:hover{
     text-decoration: underline;
+}.github{
+    display: flex;
+    margin-left: 15%;
 }
 
-.github{
-    display: table-cell;
-    vertical-align: middle;
-    position: relative;
-    right: 10px;
-}
+
+
+
+
+
 
 
 .box{
     display: flex;
-    justify-content: space-around;
-    position: relative;
+    justify-content: space-evenly;
     align-items: center;
-    height: 120vh!important;
-    width: 100% !important;
 }
-
-.simple-hiragana{
+.hiragana-tables, .katakana-tables{
     display: flex;
-    position: relative;
-    left: 4.1vw;
+    flex-direction: column;
+    align-items: center;
 }
-.complete-hiragana{
-    display: flex;
-}
-
-.main-hiragana-text{
+.main-hiragana-text, .complete-hiragana-text, .main-katakana-text, .complete-katakana-text{
     display: flex;
     color: white;
     font-family: sans-serif;
-    position: relative;
-    justify-content: center;
-}
-.complete-hiragana-text{
-    display: flex;
-    color: white;
-    font-family: sans-serif;
-    justify-content: center;
-}
-
-
-.simple-katakana{
-    display: flex;
-    position: relative;
-    position: relative;
-    left: 4.5vw;
-}
-.complete-katakana{
-    display: flex;
-}
-
-.main-katakana-text{
-    display: flex;
-    color: white;
-    font-family: sans-serif;
-    justify-content: center;
-}
-.complete-katakana-text{
-    display: flex;
-    color: white;
-    font-family: sans-serif;
-    justify-content: center;
 }
 
