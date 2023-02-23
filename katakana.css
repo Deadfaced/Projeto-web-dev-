@@ -1,47 +1,39 @@
 
 /*entire body*/
 body{
-    /*background-color: #282828;*/
-    background-image: url("assets/Katakana-bg-img0000.jpg");
+    background-color: #181818;
+    background-image: url("assets/katakana-bg-img0000.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
-/*header*/
+/* header */
 .header{
-    display: table;
+    display: flex;
     width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: space-around;
 }
-
 .github{
-    display: table-cell;
+    display: flex;
     vertical-align: middle;
-    position: relative;
-    left: 50px;
 }
-
-/*h1*/
 .katakana-title{
+    display: flex;
     color: white;
     font-family: sans-serif;
-    height: 150px;
-    font-size:500%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    position: relative;
-    right: 100px;
+    font-size: 500%;
 }
-
-/*back button*/
 .home-page-link{
+    display: flex;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
     font-size: x-large;
     color: cornflowerblue;
-    display: table-cell;
-    vertical-align: middle;
-    position: relative;
-    left: 50px;
 }
 .home-page-link:hover{
     text-decoration: underline;
@@ -54,59 +46,38 @@ body{
 
 
 /*                  flashcard lines                     */
-/*first line of flashcards*/
-.flashcard-first-line{
+#flashcard-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 15%;
+    width: 70%;
     text-align: center;
+    flex-wrap: wrap;
 }
-/*second line of flashcards*/
-.flashcard-second-line{
-    text-align: center;
-}
-/*third line of flashcards*/
-.flashcard-third-line{
-    text-align: center;
-}
-/*fourth line of flashcards*/
-.flashcard-fourth-line{
-    text-align: center;
-}
-/*fifth line of flashcards*/
-.flashcard-fifth-line{
-    text-align: center;
-}
-/*sixth line of flashcards*/
-.flashcard-sixth-line{
-    text-align: center;
-}
-/*seventh line of flashcards*/
-.flashcard-seventh-line{
-    text-align: center;
-}
-/*eighth line of flashcards*/
-.flashcard-eighth-line{
-    text-align: center;
-}
-/*nineth line of flashcards*/
-.flashcard-nineth-line{
-    text-align: center;
-}
-/*tenth line of flashcards*/
-.flashcard-tenth-line{
-    text-align: center;
-}
+  
+  
+
+
 
 
 /*flashcards*/
 .flashcard{
-    display: inline-block;
-    width: 150px;
-    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 250px;
     padding: 10px;
     margin: 10px;
     border: 2px solid rgb(165, 16, 16);
     border-radius: 5px;
-    text-align: center;
     background-color: rgb(57, 153, 212);
+    position: relative;
+}
+.flashcard > p{
+    display: flex;
+    position: absolute;
+    bottom: 60px;
 }
 
 
@@ -126,7 +97,7 @@ body{
 
 
 
-/*make animation "shake" on correct input in each flashcard*/
+/*animation "shake" on correct input for each flashcard*/
 .shake{
     animation: horizontal-shaking 0.35s;
 }
@@ -145,9 +116,13 @@ body{
 
 
 
-/*input box*/
+/*input boxes*/
 input[type="text"]{
-    width: 100%;
+    position: absolute;
+    left: 20px;
+    
+    right: 20px;
+    bottom: -20px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -159,11 +134,9 @@ input[type="text"]{
 input[type="text"]:hover{
     background-color: lightgray;
 }
-
 input[type="text"]:focus{
     border: 2px solid #555;
 }
-
 
 
 
@@ -192,6 +165,5 @@ button{
     font-family: sans-serif;
     color: lightblue;
 }
-
 
 
