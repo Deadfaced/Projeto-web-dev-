@@ -138,8 +138,6 @@ function validation(index){
             setTimeout(function(){
                 cardID.classList.remove("shake");
             },500);
-
-            document.getElementById("input" + (index + 1)).focus();
         }
     }
     
