@@ -1,0 +1,22 @@
+body{
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.hiragana-complete{
+    display: flex;
+    height: 100vh;
+}
+.home-page-link{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: cornflowerblue;
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}

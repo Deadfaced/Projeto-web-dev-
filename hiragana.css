@@ -1,0 +1,169 @@
+
+/*entire body*/
+body{
+    background-color: #181818;
+    background-image: url("assets/Hiragana-bg-img0000.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+.header{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+.github{
+    display: flex;
+    vertical-align: middle;
+}
+.hiragana-title{
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    font-size: 500%;
+}
+.home-page-link{
+    display: flex;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: cornflowerblue;
+}
+.home-page-link:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/*                  flashcard lines                     */
+#flashcard-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 15%;
+    width: 70%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+  
+  
+
+
+
+
+/*flashcards*/
+.flashcard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(165, 16, 16);
+    border-radius: 5px;
+    background-color: rgb(57, 153, 212);
+    position: relative;
+}
+.flashcard > p{
+    display: flex;
+    position: absolute;
+    bottom: 60px;
+}
+
+
+/*Hiragana characters*/
+.hiragana{
+    font-size: 3em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/*animation "shake" on correct input for each flashcard*/
+.shake{
+    animation: horizontal-shaking 0.35s;
+}
+@keyframes horizontal-shaking{
+    0%{transform: translateX(0)}
+    25%{transform: translateX(5px)}
+    50%{transform: translateX(-5px)}
+    75%{transform: translateX(5px)}
+    100%{transform: translateX(0)}
+}
+   
+
+
+
+
+
+
+
+/*input boxes*/
+input[type="text"]{
+    position: absolute;
+    left: 20px;
+    
+    right: 20px;
+    bottom: -20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(219, 36, 36);
+    border-radius: 4px;
+    text-align: center;
+    font-family: sans-serif;
+}
+input[type="text"]:hover{
+    background-color: lightgray;
+}
+input[type="text"]:focus{
+    border: 2px solid #555;
+}
+
+
+
+
+/*submit button*/
+button{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    width: 280px;
+    height: 75px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    border-radius: 8px;
+    font-size: x-large;
+}
+.submit-button{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*output*/
+#output{
+    font-family: sans-serif;
+    color: lightblue;
+}
+
+
