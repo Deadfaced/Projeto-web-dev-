@@ -1,6 +1,6 @@
 /* general CSS*/
 html{
-    background-color: gray;
+    background-color: #4a4747;
     height: 100%;
     width: 100%;
 }
@@ -8,6 +8,7 @@ body{
     margin: 2% 2% 0 2%;
     padding: 0;
     border-radius: 8px;
+    box-shadow: 0 0 8px;
     height: 100%;
     background-image: url("assets/Home\ page\ bg.jpg");
     background-color: #292929;
