@@ -140,7 +140,6 @@ input[type="text"]:focus{
 
 
 
-
 /*submit button*/
 button{
     background-color: green;
@@ -154,10 +153,32 @@ button{
     border-radius: 8px;
     font-size: x-large;
 }
-.submit-button{
+.submit-button, .hidden-buttons{
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 20px;
 }
+.submit-button{
+    flex-direction: column;
+    align-items: center;
+}
+.hidden-buttons{
+    padding: 0 20%;
+    justify-content: space-evenly;
+}
+
+/*! not working
+button:hover{
+    font-size: 1.5rem;
+}
+.submit-hiragana:hover{
+    font-size: 1.5rem;
+}
+#submit_score_hiragana:hover{
+    font-size: 1.5rem;
+}
+*/
 
 
 /*output*/
@@ -165,5 +186,3 @@ button{
     font-family: sans-serif;
     color: lightblue;
 }
-
-

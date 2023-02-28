@@ -1,14 +1,22 @@
 /* general CSS*/
+html{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+}
 body{
-    margin: 0;
+    margin: 2% 2% 0 2%;
     padding: 0;
+    border-radius: 8px;
+    height: 100%;
     background-image: url("assets/Home\ page\ bg.jpg");
+    background-color: #292929;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     align-content: space-around;
 }
-p{
+p, a{
     color: rgb(57, 153, 212);
     font-family: sans-serif;
     text-align: center;
@@ -26,7 +34,10 @@ button{
     font-family: sans-serif;
     border-radius: 8px;
 }
-
+button:hover{
+    transform: scale(1.50, 1.50);
+    transition: transform 0.3s ease-in-out;
+}
 
 
 
@@ -91,11 +102,59 @@ header > a{
 /* footer */
 footer{
     position: absolute;
+    display: flex;
     bottom: 0;
     width: 100%;
     justify-content: center;
     background-color: transparent;
 }
-footer > p{
+footer > a{
     font-size: small;
 }
+footer > a:hover{
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+/* Set the width of the scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Set the background color of the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  
+  /* Set the color and shape of the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #62d2b2;
+    border-radius: 10px;
+  }
+  
+  /* Set the color and shape of the scrollbar thumb when hovered */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #33a17e;
+    border-radius: 10px;
+  }
+  
+  /* Set the shape of the scrollbar track */
+  ::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  

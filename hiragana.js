@@ -1,11 +1,3 @@
-let correctInputs = 0;
-let totalInputs = 46;
-
-
-
-
-
-
 class flashcard{
     constructor(fcId, answer){
         this.fcId = fcId;
@@ -18,6 +10,7 @@ class flashcard{
 
 var arrayFC = [
 
+    //main hiragana
     new flashcard("あ", "a"),
     new flashcard("い", "i"),
     new flashcard("う", "u"),
@@ -90,10 +83,96 @@ var arrayFC = [
 
     new flashcard("わ", "wa"),
     new flashcard("を", "wo"),
-    new flashcard("ん", "n")
+    new flashcard("ん", "n"),
+
+
+
+    //dakuten
+    new flashcard("が", "ga"),
+    new flashcard("ぎ", "gui"),
+    new flashcard("ぐ", "gu"),
+    new flashcard("げ", "ge"),
+    new flashcard("ご", "go"),
+
+    new flashcard("ざ", "za"),
+    new flashcard("じ", "ji"),
+    new flashcard("ず", "zu"),
+    new flashcard("ぜ", "ze"),
+    new flashcard("ぞ", "zo"),
+
+    new flashcard("だ", "da"),
+    new flashcard("ぢ", "ji"),
+    new flashcard("づ", "dzu"),
+    new flashcard("で", "de"),
+    new flashcard("ど", "do"),
+
+    new flashcard("ば", "ba"),
+    new flashcard("び", "bi"),
+    new flashcard("ぶ", "bu"),
+    new flashcard("べ", "be"),
+    new flashcard("ぼ", "bo"),
+
+    //handakuten
+    new flashcard("ぱ", "pa"),
+    new flashcard("ぴ", "pi"),
+    new flashcard("ぷ", "pu"),
+    new flashcard("ぺ", "pe"),
+    new flashcard("ぽ", "po"),
+
+
+
+    //combinations
+    new flashcard("きゃ", "kya"),
+    new flashcard("きゅ", "kyu"),
+    new flashcard("きょ", "kyo"),
+
+    new flashcard("ぎゃ", "gya"),
+    new flashcard("ぎゅ", "gyu"),
+    new flashcard("ぎょ", "gyo"),
+
+    new flashcard("しゃ", "sha"),
+    new flashcard("しゅ", "shu"),
+    new flashcard("しょ", "sho"),
+
+    new flashcard("じゃ", "ja"),
+    new flashcard("じゅ", "ju"),
+    new flashcard("じょ", "jo"),
+
+    new flashcard("ちゃ", "cha"),
+    new flashcard("ちゅ", "chu"),
+    new flashcard("ちょ", "cho"),
+
+    new flashcard("ぢゃ", "ja"),
+    new flashcard("ぢゅ", "ju"),
+    new flashcard("ぢょ", "jo"),
+
+    new flashcard("にゃ", "nya"),
+    new flashcard("にゅ", "nyu"),
+    new flashcard("にょ", "nyo"),
+
+    new flashcard("ひゃ", "hya"),
+    new flashcard("ひゅ", "hyu"),
+    new flashcard("ひょ", "hyo"),
+
+    new flashcard("びゃ", "bya"),
+    new flashcard("びゅ", "byu"),
+    new flashcard("びょ", "byo"),
+
+    new flashcard("ぴゃ", "pya"),
+    new flashcard("ぴゅ", "pyu"),
+    new flashcard("ぴょ", "pyo"),
+
+    new flashcard("みゃ", "mya"),
+    new flashcard("みゅ", "myu"),
+    new flashcard("みょ", "myo"),
+
+    new flashcard("りゃ", "rya"),
+    new flashcard("りゅ", "ryu"),
+    new flashcard("りょ", "ryo")
+    
+
+
 ];
-
-
 
 
 
@@ -117,6 +196,8 @@ arrayFC.forEach((card, id) => {
 
 
 
+let correctInputs = 0;
+let totalInputs = arrayFC.length;
 
 function validation(index){
     if(event.key === "Enter"){

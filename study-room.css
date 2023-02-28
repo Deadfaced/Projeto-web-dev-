@@ -27,7 +27,7 @@ h1{
     font-size: 500%;
     font-weight: bold;
 }
-.home-page-link{
+.back-link{
     display: flex;
     margin-right: 15%;
     text-decoration: none;
