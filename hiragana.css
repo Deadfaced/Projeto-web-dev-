@@ -151,7 +151,7 @@ button{
     cursor: pointer;
     font-family: sans-serif;
     border-radius: 8px;
-    font-size: x-large;
+    font-size: 2em;
 }
 .submit-button, .hidden-buttons{
     display: flex;
@@ -168,17 +168,7 @@ button{
     justify-content: space-evenly;
 }
 
-/*! not working
-button:hover{
-    font-size: 1.5rem;
-}
-.submit-hiragana:hover{
-    font-size: 1.5rem;
-}
-#submit_score_hiragana:hover{
-    font-size: 1.5rem;
-}
-*/
+
 
 
 /*output*/
@@ -186,3 +176,44 @@ button:hover{
     font-family: sans-serif;
     color: lightblue;
 }
+
+
+
+
+
+
+
+/* Set the width of the scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Set the background color of the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  
+  /* Set the color and shape of the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #62d2b2;
+    border-radius: 10px;
+  }
+  
+  /* Set the color and shape of the scrollbar thumb when hovered */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #33a17e;
+    border-radius: 10px;
+  }
+  
+  /* Set the shape of the scrollbar track */
+  ::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
