@@ -1,1 +1,1 @@
-changed body size; changed scroll bar; added dakuten, handakuten and combinations; added animations on-hover to main page buttons; changed "home-button" from "study-room" to "back-button";
+changed main page to have options enclosed in a cardbox, added hover to said cardboxes; changed cardboxes' positions

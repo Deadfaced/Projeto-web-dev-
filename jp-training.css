@@ -73,12 +73,10 @@ button{
     text-align: center;
     font-family: sans-serif;
     border-radius: 8px;
-    transition: transform .3s ease-in-out;
     user-select: none;
-}
-button:hover{
-    transform: scale(1.50, 1.50);
-    
+}button:hover{
+    color: #b63440;
+    background-color: #e1e0de;
 }
 
 
@@ -120,18 +118,41 @@ header > .logo-container{
 
 /* box div */
 .box{
-    display: flex;
+    display: grid;
     height: 74dvh;
-    justify-content: space-around;
+    place-items: center;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 3fr);
+    grid-template-areas: 
+        ". h ."
+        "sr . k"
+    ;
     align-items: center;
 }
-.study-room, .hiragana-link, .katakana-link{
+.option{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-weight: bold;
     width: 250px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    height: 300px;
+    transition: transform 0.5s ease;
 }
+.study-room{
+    grid-area: sr;
+    margin-bottom: 15%;
+}.hiragana-link{
+    grid-area: h;
+}.katakana-link{
+    grid-area: k;
+    margin-bottom: 15%;
+}.option:hover{
+    transform: scale(1.2);
+}
+
 .study-room-jp, .hiragana-jp, .katakana-jp{
     color: white;
     font-weight: normal;
