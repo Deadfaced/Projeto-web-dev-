@@ -4,10 +4,14 @@
 }
 
 html{
+    height: 100%;
+}
+
+body{
     background-color: #4a4747;
     width: 100%;
 }
-body{
+.cont{
     display: grid;
     grid-template-columns: 1fr 11fr;
     grid-template-rows: 3fr 13fr;
@@ -16,23 +20,23 @@ body{
     border: solid 1px #181818;
     border-radius: 8px 8px 0 0;
     box-shadow: 0 0 8px;
-    height: 98dvh;
+    height: 94dvh;
     background-image: url("assets/Home\ page\ bg.jpg");
     background-color: #292929;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     align-content: space-around;
-    filter: none;
     transition: filter 0.5s ease;
 }
 
 #filtro{
     position: fixed;
+    margin: 1% 1% 0 1%;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 1%;
     z-index: -1000;
     backdrop-filter: blur(5px);
 }
