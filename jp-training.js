@@ -36,3 +36,19 @@ logo2.addEventListener("mouseout", () => {
 
 
 
+
+
+
+
+
+const qualq = document.getElementById("filtro");
+const card = document.querySelectorAll(".option");
+
+card.forEach(element => {
+    element.addEventListener("mouseover", () =>{
+        qualq.style.zIndex = "1000";
+    })
+    element.addEventListener("mouseout", () =>{
+        qualq.style.zIndex = "-1000";
+    })
+});

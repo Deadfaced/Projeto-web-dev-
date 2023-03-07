@@ -23,7 +23,21 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     align-content: space-around;
+    filter: none;
+    transition: filter 0.5s ease;
 }
+
+#filtro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
+    backdrop-filter: blur(5px);
+}
+
+
 
 .nav{
     background-color: #292929;
@@ -151,6 +165,10 @@ header > .logo-container{
     margin-bottom: 15%;
 }.option:hover{
     transform: scale(1.2);
+    z-index: 1001;
+}
+#sr:hover{    
+    backdrop-filter: blur(5px);
 }
 
 .study-room-jp, .hiragana-jp, .katakana-jp{
